@@ -1,4 +1,5 @@
 import React from 'react'
+import Breadcrumb from '../components/BreadCrumb'
 
 const layout = ({
     children, // will be a page or nested layout
@@ -6,6 +7,7 @@ const layout = ({
     children: React.ReactNode
   }) => {
   return (
+    <>
     <div className='grid h-[100vh] grid-cols-5 p-4'>
         <div className="sidebar col-span-1 ">
             <div className='fixed top-0 p-5 pt-7'> 
@@ -28,9 +30,18 @@ const layout = ({
             </div>
         </div>
         <div className="main_section d-block h-full border col-span-4 bg-white rounded-2xl shadow-2xl p-5 overflow-y-scroll">
+        <Breadcrumb
+          homeElement={'Home'}
+          separator={<span className='text-gray-400'> / </span>}
+          activeClasses='text-amber-500 font-semibold'
+          containerClasses='flex mb-5 px-3 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-md' 
+          listClasses='hover:underline mx-2 text-white'
+          capitalizeLinks
+        />
           {children}
         </div>
     </div>
+    </>
   )
 }
 
