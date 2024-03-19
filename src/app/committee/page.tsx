@@ -20,28 +20,28 @@ const page = () => {
   return (
     <div className="grid grid-cols-3 gap-5 ">
 
-            <div className="flex flex-col px-4 py-3 rounded-md bg-gray-100" >
-                <h2 className='font-semibold text-gray-800 text-sm'>
-                    <i className="fa fa-ticket mr-2" aria-hidden="true"></i> 
-                    Manage Ticket
-                </h2>
-                <Link href='/committee/manage-ticket' className="inline-block text-white bg-gray-700 border-0 py-1 px-4 focus:outline-none hover:bg-gray-600 rounded text-sm mt-4 ml-auto">
-                    Manage
-                </Link>
-            </div>
+        <HomeCard title='Manage Ticket' iconClass='fa fa-ticket' link='/committee/manage-ticket'/>
+        <HomeCard title='Maintenance Fee Summary' iconClass='fa-solid fa-money-check-dollar' link='/committee/maintenance-summary'/>
+        <HomeCard title='Special Maintenance' iconClass='fa-solid fa-paint-roller' link='/committee/special-maintenance'/>
+        <HomeCard title='Manage Expenses' iconClass='fa-solid fa-money-bill-transfer' link='/committee/manage-expenses'/>
 
-            <div className="flex flex-col px-4 py-3 rounded-md bg-gray-100" >
-                <h2 className='font-semibold text-gray-800 text-sm'>
-                    <i className="fa-solid fa-money-check-dollar mr-2" aria-hidden="true"></i> 
-                    Maintenance Fee Summary
-                </h2>
-                <Link href='/committee/maintenance-summary' className="inline-block text-white bg-gray-700 border-0 py-1 px-4 focus:outline-none hover:bg-gray-600 rounded text-sm mt-4 ml-auto">
-                    View
-                </Link>
-            </div>
-
-        </div>
+    </div>
   )
 }
 
 export default page
+
+
+function HomeCard({title , iconClass , link}: {title:string ; iconClass : string ; link : string;}){
+    return (
+        <div className="flex flex-col px-4 py-4 rounded-md bg-gray-100" >
+            <h2 className='font-semibold text-gray-800 text-lg flex items-center'>
+                <i className={`${iconClass} mr-3 text-xl`} aria-hidden="true"></i> 
+                {title}
+            </h2>
+            <Link href={link} className="inline-block text-white bg-gray-700 border-0 py-1 px-4 focus:outline-none hover:bg-gray-600 rounded text-md mt-4 ml-auto">
+                View
+            </Link>
+        </div>
+    )
+}

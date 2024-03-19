@@ -13,19 +13,19 @@ const layout = ({
             <div className='fixed top-0 p-5 pt-7'> 
                 <div className="profile">
                     <a href="#">
-                        <img className='rounded-lg' src="https://placehold.co/50" alt="Profile" />
+                        <img className='rounded-lg' src="https://placehold.co/70" alt="Profile" />
                     </a>
-                    <p className='text-white font-semibold text-md mt-2'>This is the name</p>
-                    <p className='text-gray-400  font-light text-xs '>email@email.com</p>
+                    <p className='text-white font-semibold text-lg mt-2'>This is the name</p>
+                    <p className='text-gray-400  font-light text-sm '>email@email.com</p>
                 </div>
                 <ul className='mt-20'>
-                    <li className='py-2 text-gray-400 font-medium' >Menu item 1</li>
-                    <li className='py-2 text-gray-400 font-medium' >Menu item 2</li>
-                    <li className='py-2 text-gray-400 font-medium' >Menu item 3</li>
-                    <li className='py-2 text-gray-400 font-medium' >Menu item 4</li>
-                    <li className='py-2 text-gray-400 font-medium' >Menu item 5</li>
-                    <li className='py-2 text-gray-400 font-medium' >Menu item 6</li>
-                    <li className='py-2 text-gray-400 font-medium' >Menu item 7</li>
+                    <li className='py-2 text-gray-400 text-xl' >Menu item 1</li>
+                    <li className='py-2 text-gray-400 text-xl' >Menu item 2</li>
+                    <li className='py-2 text-gray-400 text-xl' >Menu item 3</li>
+                    <li className='py-2 text-gray-400 text-xl' >Menu item 4</li>
+                    <li className='py-2 text-gray-400 text-xl' >Menu item 5</li>
+                    <li className='py-2 text-gray-400 text-xl' >Menu item 6</li>
+                    <li className='py-2 text-gray-400 text-xl' >Menu item 7</li>
                 </ul>
             </div>
         </div>

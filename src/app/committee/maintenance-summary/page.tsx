@@ -12,7 +12,7 @@ const page = () => {
 
               <div className="flex flex-wrap">
 
-                <div  className="xl:w-1/3 md:w-1/2 p-4">
+                <div  className=" md:w-1/2 p-4 px-5">
                   <Link href='/committee/maintenance-summary/appartment-wise' className="block border border-gray-200 px-6 py-4 rounded-lg transition hover:shadow-md">
                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                       <i className="fa-solid fa-building-user"></i>
@@ -22,7 +22,7 @@ const page = () => {
                   </Link>
                 </div>
 
-                <div className="xl:w-1/3 md:w-1/2 p-4">
+                <div className=" md:w-1/2 p-4 px-5">
                   <Link href='/committee/maintenance-summary/monthly-report' className="block border border-gray-200 px-6 py-4 rounded-lg  transition hover:shadow-md">
                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                       <i className="fa-solid fa-calendar-days"></i>
